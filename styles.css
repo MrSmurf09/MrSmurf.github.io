@@ -1,89 +1,211 @@
-
-.container {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container_title{
-    align-self: center;
-    width: 700px;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
     display: flex;
-    gap: 20px;
-    align-items: center;
-    border-radius: 8px 8px 0px 0px;
-    background: red;
     justify-content: space-between;
-    padding: 20px;
-}
-
-.container_image{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.container_image img{
-    width: 100px; 
-    height: 100px;
-}
-
-.container_text {
-    width: 700px;
-    border-bottom: 1px solid red;
-}
-
-.container_info {
-    align-self: center;
-    width: 700px;
-    background: grey;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    border-radius: 0px 0px 8px 8px;
-}
-
-.container_info_superior {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    padding: 20px;
+    background-color: #fff;
 }
 
-.container_text p, h3 {
-    color: white;
+.titulo {
+    font-size: 32px;
+    font-weight: bold;
 }
 
-.container_info h3 {
-    text-align: center;
-}
-
-.container_info span, strong {
-    color: white;
-}
-
-.container_title h1, h2 {
-    color: white;
-}
-
-.button {
+.navbar ul {
     display: flex;
-    color: white;
-    justify-content: center;
-    height: 40px;
-    width: 180px;
-    padding: 12px;
-    background-color:rgb(232, 178, 41) ;
-    border-radius: 15px;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.principal {
+    display: flex;
+    padding: 20px;
+}
+
+.articulo-principal {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.articulo-principal img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contenido {
+    padding: 20px;
+    display: flex;
+}
+.contenido-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contenido h1 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.contenido p {
+    margin-bottom: 20px;
+}
+
+.contenido button {
+    padding: 10px 20px;
+    height: 30%;
+    width: 30%;
+    background-color: red;
+    color: #fff;
     border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
-.button:hover {
-    background-color: rgb(193, 148, 34);
+aside {
+    width: 30%;
+    margin-left: 20px;
 }
 
-.align-button {
+.nuevos-articulos {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nuevos-articulos h2 {
+    margin-bottom: 20px;
+}
+
+.nuevos-articulos ul {
+    list-style: none;
+}
+
+.nuevos-articulos ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.nuevos-articulos ul li a {
+    text-decoration: none;
+    color: #ffd700;
+    cursor: pointer;
+}
+
+footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.articulos-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.articulo {
+    width: 30%;
+    height: 376px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
     text-align: center;
+}
+
+.articulo img {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid black;
+    
+}
+
+.articulo h3 {
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.articulo a {
+    text-decoration: none;
+    color: black;
+}
+
+.articulo p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+@media(min-width: 501px) and (max-width: 850px){
+    .contenido{
+        flex-direction: column;
+    }
+
+    .articulo{
+        width: 45%;
+        margin-bottom: 15px;
+    }
+
+    .articulo-principal{
+        width: 60%;
+    }
+
+    aside{
+        width: 40%;
+    }
+}
+
+@media(max-width: 500px){
+    .header{
+        flex-direction: column;
+    }
+
+    .principal{
+        flex-direction: column;
+    }
+
+    .articulo-principal{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contenido{
+        flex-direction: column;
+    }
+
+    .articulo{
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
