@@ -3,7 +3,10 @@ html, body {
     height:100vh;
     width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;background-image: url('https://i.postimg.cc/hjtQSqP0/sukuna-vs-mahoraga.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .container {
     display: flex;
@@ -12,24 +15,11 @@ html, body {
     flex-direction: column;
 }
 
-.container img {
-    height: 100%;
-    object-fit: fill;
-}
-
-.container-image {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-.navbar {
+nav {
     padding: 10px;
     display: flex;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: space-around;
+    width: 50%;
     height: 6%;
     text-align: center;
     align-items: center;
@@ -39,7 +29,16 @@ html, body {
     align-self: center;
 }
 
-.navbar img {
+.menu-des{
+    background-color: #1C7CE2;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav img {
     width: 40%;
     height: 100%;
 }
@@ -82,9 +81,9 @@ html, body {
     text-align: center;
     color: white;
     border: 1px solid white;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(7px);
     padding: 10px;
-    box-shadow: 0px 0px 50px black;
+    box-shadow: 0px 0px 50px white;
 }
 
 .align-info {
@@ -101,7 +100,7 @@ html, body {
     border-radius: 20px;
     overflow: hidden;
     align-self: center;
-    box-shadow: 0px 0px 15px white;
+    box-shadow: 0px 0px 30px white;
 }
 
 .video-container video {
@@ -119,3 +118,48 @@ html, body {
     border-radius: 10px;
 }
 
+@media(min-width: 501px) and (max-width: 850px){
+    .align-info{
+        flex-direction: column-reverse;
+    }
+
+    .container-info{
+        width: 70%;
+        background-color: grey;
+        backdrop-filter: none;
+    }
+}
+
+@media(max-width: 500px){
+    nav{
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .menu-des{
+        display: inline-block;
+    }
+
+    .desaparecer{
+        display: none;
+    }
+
+    .menu{
+        width: 60%;
+    }
+    
+    .align-info{
+        flex-direction: column-reverse;
+    }
+
+    .container-info{
+        width: 100%;
+        background-color: grey;
+        backdrop-filter: none;
+    }
+    
+    .botonir{
+        width: 50%;
+    }
+}

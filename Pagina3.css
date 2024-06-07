@@ -3,7 +3,7 @@ html, body {
     height:100vh;
     width: 100vw;
     display: flex;
-    flex-direction: column;background-image: url('../image/toji_vs_gojo.jpg');
+    flex-direction: column;background-image: url('https://i.postimg.cc/X7QhJf8c/gojovuela.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -157,5 +157,9 @@ nav img {
         width: 100%;
         background-color: grey;
         backdrop-filter: none;
+    }
+
+    .botonir{
+        width: 50%;
     }
 }

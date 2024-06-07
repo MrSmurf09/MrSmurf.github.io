@@ -208,4 +208,8 @@ footer {
         width: 100%;
         margin-bottom: 15px;
     }
+
+    .desaparecer{
+        display: none;
+    }
 }
