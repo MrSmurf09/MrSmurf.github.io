@@ -1,5 +1,5 @@
 function Inicio(){
-    window.open("https://mrsmurf09.github.io/sabados.github.io/index", "_self");
+    window.open("https://mrsmurf09.github.io/sabados.github.io/", "_self");
 }
 
 function Gojo(){
