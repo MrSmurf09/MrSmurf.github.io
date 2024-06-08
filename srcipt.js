@@ -1,5 +1,5 @@
 function Inicio(){
-    window.open("https://mrsmurf09.github.io/MrSmurf.github.io/", "_self");
+    window.open("https://mrsmurf09.github.io/MrSmurf.github.io/index.html", "_self");
 }
 
 function Gojo(){
