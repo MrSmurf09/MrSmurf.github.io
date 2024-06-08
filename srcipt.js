@@ -1,21 +1,21 @@
 function Inicio(){
-    window.open("https://mrsmurf09.github.io/sabados.github.io/", "_self");
+    window.open("https://mrsmurf09.github.io/MrSmurf.github.io/", "_self");
 }
 
 function Gojo(){
-    window.open("https://mrsmurf09.github.io/sabados.github.io/Gojosukuna/GojovsSukuna", "_self");
+    window.open("https://mrsmurf09.github.io/MrSmurf.github.io/Gojosukuna/GojovsSukuna", "_self");
 }
 
 function Sukuna(){
-    window.open("https://mrsmurf09.github.io/sabados.github.io/Sukuna/SukunavsMahoraga", "_self");
+    window.open("https://mrsmurf09.github.io/MrSmurf.github.io/Sukuna/SukunavsMahoraga", "_self");
 }
 
 function Toji(){
-    window.open("https://mrsmurf09.github.io/sabados.github.io/Toji/TojivsGojo", "_self");
+    window.open("https://mrsmurf09.github.io/MrSmurf.github.io/Toji/TojivsGojo", "_self");
 }
 
 function Vivy(){
-    window.open("https://mrsmurf09.github.io/sabados.github.io/vivy/vivy", "_self");
+    window.open("https://mrsmurf09.github.io/MrSmurf.github.io/vivy/vivy", "_self");
 }
 
 function menu(){
