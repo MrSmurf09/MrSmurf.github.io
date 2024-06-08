@@ -1,5 +1,5 @@
 function Inicio(){
-    window.open("https://mrsmurf09.github.io/MrSmurf.github.io/index.html", "_self");
+    window.open("https://mrsmurf09.github.io/MrSmurf.github.io/", "_self");
 }
 
 function Gojo(){
@@ -20,8 +20,12 @@ function Vivy(){
 
 function menu(){
     let menu = document.getElementsByClassName("menu");
+    let menu2 = document.getElementsByClassName("menu_2");
     for (let i = 0; i < menu.length; i++) {
         menu[i].classList.toggle("desaparecer");
-        
+    }
+    
+    for (let i = 0; i < menu2.length; i++) {
+        menu2[i].classList.toggle("desaparecer");
     }
 }
