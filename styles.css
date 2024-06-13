@@ -25,10 +25,7 @@ body {
 .navbar ul {
     display: flex;
     list-style: none;
-}
-
-.navbar ul li {
-    margin-left: 20px;
+    gap: 20px;
 }
 
 .navbar ul li a {
